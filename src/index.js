@@ -4,12 +4,12 @@ const $ = require('jquery');
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#7BAAB3'],
-        anchors: ['section0', 'section1', 'section2', 'section3'],
+        sectionsColor: ['#1976D2', '#FF4081', '#BBDEFB', '#E64A19', '#FFEB3B'],
+        anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 
         navigation: true,
         css3: true,
-        scrollingSpeed: 1000,
+        scrollingSpeed: 600,
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
