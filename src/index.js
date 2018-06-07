@@ -1,7 +1,6 @@
 const fullpage = require("fullpage.js");
 const $ = require('jquery');
 
-
 $(document).ready(function () {
     $('#fullpage').fullpage({
         sectionsColor: ['#1976D2', '#FF4081', '#512DA8', '#E64A19', '#0097A7'],
@@ -33,7 +32,5 @@ $(document).ready(function () {
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
-
-
     });
 });
