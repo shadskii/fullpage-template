@@ -1,11 +1,13 @@
 {
   "name": "fullpage-template",
+  "homepage": "https://shadskii.github.io/fullpage-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
+    "deploy": "webpack --mode production && gh-pages -d dist",
     "develop": "webpack --mode development --watch",
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
@@ -21,6 +23,7 @@
   },
   "dependencies": {
     "fullpage.js": "^2.9.7",
+    "gh-pages": "^1.2.0",
     "jquery": "^3.3.1"
   }
 }
