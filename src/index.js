@@ -4,7 +4,7 @@ const $ = require('jquery');
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
-        sectionsColor: ['#1976D2', '#FF4081', '#BBDEFB', '#E64A19', '#FFEB3B'],
+        sectionsColor: ['#1976D2', '#FF4081', '#512DA8', '#E64A19', '#0097A7'],
         anchors: ['section0', 'section1', 'section2', 'section3', 'section4'],
 
         navigation: true,
