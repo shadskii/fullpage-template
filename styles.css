@@ -1,0 +1,24 @@
+@import 'https://rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.center{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+.big{
+    font-size: 150px;
+}
+.really-big{
+    font-size: 200px;
+}
+.medium{
+    font-size: 80px;
+}
+.smaller{
+    font-size: 60px;
+}
