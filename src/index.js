@@ -1,6 +1,5 @@
 const fullpage = require("fullpage.js");
 const $ = require('jquery');
-// import 'fullpage.js'
 
 $(document).ready(function () {
     $('#fullpage').fullpage({
