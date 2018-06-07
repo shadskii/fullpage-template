@@ -6,7 +6,7 @@ $(document).ready(function () {
         sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#7BAAB3'],
         anchors: ['section0', 'section1', 'section2', 'section3'],
 
-        //Scrolling
+        navigation: true,
         css3: true,
         scrollingSpeed: 1000,
         autoScrolling: true,
