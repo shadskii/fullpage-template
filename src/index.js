@@ -31,6 +31,5 @@ $(document).ready(function () {
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
-        bigSectionsDestination: null,
     });
 });
