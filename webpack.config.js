@@ -32,6 +32,9 @@ module.exports = {
                 from: 'src/styles.css',
                 to: 'styles.css',
                 toType: 'file'
+            },
+            {
+                from: 'static'
             }
         ])
     ]
