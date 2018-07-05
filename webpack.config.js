@@ -2,6 +2,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -29,16 +30,6 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {
-        from: 'src/index.html',
-        to: 'index.html',
-        toType: 'file',
-      },
-      {
-        from: 'src/styles.css',
-        to: 'styles.css',
-        toType: 'file',
-      },
-      {
         from: 'static',
       },
     ]),
@@ -46,12 +37,16 @@ module.exports = {
       title: 'fullpage template',
       template: 'src/index.html',
     }),
-  ],  module: {
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
+  module: {
     rules: [
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
-    ]
-  }
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+    ],
+  },
 };
