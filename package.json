@@ -28,13 +28,13 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.15.1",
     "webpack-cli": "^2.1.4",
-    "webpack-dev-server": "^3.1.4"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.1.4",
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
     "fullpage.js": "^2.9.7",
     "gh-pages": "^1.2.0",
     "jquery": "^3.3.1"
