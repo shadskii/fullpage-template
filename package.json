@@ -7,9 +7,8 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "deploy": "webpack --mode production && gh-pages -d dist",
-    "develop": "webpack --mode development --watch",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "buildProd": "webpack --mode production",
+    "buildDev": "webpack --mode development"
   },
   "author": "Jake Hassel",
   "license": "MIT",
