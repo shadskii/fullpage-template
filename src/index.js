@@ -1,5 +1,5 @@
-const fullpage = require('fullpage.js');
 const $ = require('jquery');
+require('fullpage.js');
 require('./styles.css');
 
 $(document).ready(function() {
