@@ -11,14 +11,14 @@
   width: 100%;
 }
 .big {
-  font-size: 150px;
+  font-size: 6em;
 }
 .really-big {
-  font-size: 200px;
+  font-size: 8em;
 }
 .medium {
-  font-size: 80px;
+  font-size: 5em;
 }
 .smaller {
-  font-size: 60px;
+  font-size: 3em;
 }
