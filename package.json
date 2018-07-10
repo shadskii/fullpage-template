@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open",
+    "start": "webpack-dev-server --mode development --open --hot",
     "deploy": "webpack --mode production && gh-pages -d dist",
     "buildProd": "webpack --mode production",
     "buildDev": "webpack --mode development"
