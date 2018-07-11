@@ -4,15 +4,17 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const outputDir = path.resolve(__dirname, 'dist');
+const assetsDir = path.join(__dirname, 'src', 'assets');
 module.exports = {
   entry: './src/index.js',
   target: 'web',
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: outputDir,
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    contentBase: outputDir,
     port: 9000,
   },
   optimization: {
@@ -30,7 +32,7 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
       {
-        from: 'static',
+        from: assetsDir,
       },
     ]),
     new HtmlWebpackPlugin({
