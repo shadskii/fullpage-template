@@ -57,16 +57,20 @@ Also this will start a watch process, so you can change the source and the proce
 # Scripts
 
 ```
-Start the dev server on localhost:9000
+// Start the dev server on localhost:9000
 npm start
 ```
 
 ```
-Build for production to /dist
+// Build for production to /dist
 npm run build
 ```
 
 ```
-Deploy your project to the github pages specified by the hompage specified in package.json
+// Deploy your project to the github pages specified by the hompage specified in package.json
 npm run deploy
 ```
+
+# Eslint
+
+This project uses Google's javascript rules so you can write error-free javasctipt code, if you use Visual Studio Code, you can install eslint from the extension tab to activate this function, for other editors just google name of the editor + eslint you will find how to enable it in your editor.
