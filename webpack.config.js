@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const outputDir = path.resolve(__dirname, 'dist');
-const assetsDir = path.join(__dirname, 'src', 'assets');
+const assetsDir = path.resolve(__dirname, 'src', 'assets');
 module.exports = {
   entry: './src/index.js',
   target: 'web',
