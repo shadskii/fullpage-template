@@ -7,8 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "deploy": "webpack --mode production && gh-pages -d dist",
-    "buildProd": "webpack --mode production",
-    "buildDev": "webpack --mode development"
+    "build": "webpack --mode production"
   },
   "author": "Jake Hassel",
   "license": "MIT",
@@ -32,11 +31,11 @@
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.5",
     "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "gh-pages": "^1.2.0"
   },
   "dependencies": {
     "fullpage.js": "^2.9.7",
-    "gh-pages": "^1.2.0",
     "jquery": "^3.3.1"
   }
 }

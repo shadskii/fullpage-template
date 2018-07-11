@@ -53,3 +53,20 @@ Also this will start a watch process, so you can change the source and the proce
 ├── *webpack.config.js* webpack config, it has a dev and prod environment
 └── *README.md* this file
 ```
+
+# Scripts
+
+```
+Start the dev server on localhost:9000
+npm start
+```
+
+```
+Build for production to /dist
+npm run build
+```
+
+```
+Deploy your project to the github pages specified by the hompage specified in package.json
+npm run deploy
+```
