@@ -2,7 +2,7 @@
   "name": "fullpage-template",
   "homepage": "https://shadskii.github.io/fullpage-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project provides a starting point for creating fullpage.js web applications.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
@@ -37,5 +37,16 @@
   "dependencies": {
     "fullpage.js": "^2.9.7",
     "jquery": "^3.3.1"
+  },
+  "bin": {
+    "fullpage-template": "create-fullpage-app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadskii/fullpage-template.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/shadskii/fullpage-template/issues"
   }
 }
