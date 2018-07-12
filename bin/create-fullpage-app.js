@@ -6,6 +6,7 @@ const https = require('https');
 const {exec} = require('child_process');
 
 const packageJson = require('../package.json');
+const cfaUrl = 'https://raw.githubusercontent.com/shadskii/fullpage/master';
 
 /**
  * we pass the object key dependency || devdependency to this function
@@ -42,6 +43,24 @@ exec(
     ];
     filesToCopy.forEach((f) => {
       fs.createReadStream();
+    });
+
+    https.get(`${cfaUrl}/.gitignore`, (res) => {
+      res.setEncoding('utf8');
+      let body = '';
+      res.on('data', (data) => {
+        body += data;
+      });
+      res.on('end', () => {
+        fs.writeFile(
+          `${dirName}/.gitignore`,
+          body,
+          {encoding: 'utf-8'},
+          (err) => {
+            if (err) throw err;
+          }
+        );
+      });
     });
   }
 );
